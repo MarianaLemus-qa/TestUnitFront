@@ -11,11 +11,27 @@
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
+  "lint-staged": {
+    "src/**/*.{js,md,ts,graphql,yml,yaml,json}": [
+      "npm run test:staged",
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{scss,css}": "prettier --write"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "precommit": "lint-staged",
+    "test:staged": "cross-env CI=true react-scripts test --env=jsdom --findRelatedTests",
+    "coverage": "yarn test --coverage --watchAll=false --passWithNoTests"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn precommit"
+    }
   },
   "eslintConfig": {
     "extends": [
