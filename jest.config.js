@@ -5,6 +5,5 @@ module.exports = {
       outputDirectory: 'reports/results',
       outputName: 'test-results.xml',
     } ]
-
   ]
 };
