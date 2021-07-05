@@ -2,8 +2,8 @@ module.exports = {
   reporters: [
     'default',
     [ 'jest-junit', {
-      outputDirectory: 'build',
-      outputName: 'testfronted',
+      outputDirectory: 'report-group/Testunitfronend-jest_reports',
+      outputName: 'reort',
     } ]
   ]
 };
