@@ -6,6 +6,6 @@ module.exports = {
       outputName: 'test-results.xml',
     } ]
 
-    
+
   ]
 };
