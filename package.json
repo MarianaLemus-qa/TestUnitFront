@@ -38,17 +38,5 @@
   },
   "devDependencies": {
     "jest-junit": "^12.2.0"
-  },
-  "jest": {
-    "reporters": [
-        "default",
-        [
-            "jest-junit",
-            {
-                "outputDirectory": "reports/results",
-                "outputName": "test-results.xml"
-            }
-        ]
-    ]
-}
+  }
 }
