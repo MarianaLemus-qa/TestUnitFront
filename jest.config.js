@@ -2,7 +2,7 @@ module.exports = {
   reporters: [
     'default',
     [ 'jest-junit', {
-      outputDirectory: 'coverage',
+      outputDirectory: '../hello-react',
       outputName: 'test-unit-front',
     } ]
   ]
