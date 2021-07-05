@@ -2,7 +2,7 @@ module.exports = {
   reporters: [
     'default',
     [ 'jest-junit', {
-      outputDirectory: 's3://fronted/teste',
+      outputDirectory: 'fronted/teste',
       outputName: 'test-unit-front',
     } ]
   ]
